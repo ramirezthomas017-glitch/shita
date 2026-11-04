@@ -15,10 +15,10 @@
 
     </p>
 
-    <button class="principal">
+    <a href="<?= URL ?>?url=chat" class="principal">
+    Comenzar conversación 
+</a>
 
-        Hablar con SHITA
-
-    </button>
+<?php require_once "app/views/components/progresoEmocional.php"; ?>
 
 </div>

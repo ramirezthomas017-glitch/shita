@@ -10,6 +10,8 @@
     <p>Tu bienestar importa </p>
     <p>Crea tu cuenta para comenzar. </p>
 
+    <body class="auth-page">
+
         <form action="<?= URL ?>?url=guardarUsuario" method="POST">
 
             <input

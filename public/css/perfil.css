@@ -1,0 +1,313 @@
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.perfil-page {
+    flex: 1;
+    min-height: 100vh;
+    padding: 50px;
+    box-sizing: border-box;
+    background: #f7f9fc;
+}
+
+
+/* HEADER */
+
+.perfil-header {
+    margin-bottom: 30px;
+}
+
+.perfil-header h1 {
+    margin: 0;
+    color: #173B6C;
+    font-size: 32px;
+}
+
+.perfil-header p {
+    margin-top: 8px;
+    color: #777;
+    font-size: 15px;
+}
+
+
+/* TARJETAS */
+
+.perfil-card {
+    max-width: 900px;
+    margin-bottom: 22px;
+    padding: 28px;
+
+    background: white;
+    border-radius: 18px;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+
+    box-sizing: border-box;
+}
+
+.perfil-card-header {
+    margin-bottom: 24px;
+}
+
+.perfil-card-header h2 {
+    margin: 0;
+    color: #173B6C;
+    font-size: 20px;
+}
+
+.perfil-card-header p {
+    margin: 6px 0 0;
+    color: #888;
+    font-size: 14px;
+}
+
+
+/* FOTO */
+
+.perfil-foto {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.perfil-foto img {
+    width: 76px;
+    height: 76px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid #eef2f7;
+}
+
+.perfil-foto h3 {
+    margin: 0 0 5px;
+
+    color: #173B6C;
+    font-size: 18px;
+}
+
+.perfil-foto span {
+    color: #888;
+    font-size: 14px;
+}
+
+
+/* FORMULARIOS */
+
+.perfil-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.campo-grupo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campo label {
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px 14px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    outline: none;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.campo input:focus {
+    border-color: #173B6C;
+    box-shadow: 0 0 0 3px rgba(23, 59, 108, 0.08);
+}
+
+
+/* BOTONES */
+
+.btn-principal {
+    align-self: flex-start;
+
+    padding: 11px 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #173B6C;
+    color: white;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-principal:hover {
+    background: #214d88;
+}
+
+
+/* PLAN */
+
+.plan-actual {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+
+    border-radius: 14px;
+
+    background: #f7f9fc;
+}
+
+.plan-label {
+    color: #888;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.plan-actual h3 {
+    margin: 5px 0;
+
+    color: #173B6C;
+}
+
+.plan-actual p {
+    margin: 0;
+
+    color: #888;
+    font-size: 13px;
+}
+
+.btn-secundario {
+    padding: 9px 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 9px;
+
+    background: white;
+    color: #999;
+
+    cursor: not-allowed;
+}
+
+
+/* ZONA PELIGROSA */
+
+.perfil-card.peligro {
+    border: 1px solid #f0d6d6;
+}
+
+.perfil-card.peligro h2 {
+    color: #a33;
+}
+
+.btn-eliminar {
+    display: inline-block;
+
+    padding: 11px 17px;
+
+    border-radius: 10px;
+
+    background: #a33;
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.2s;
+}
+
+.btn-eliminar:hover {
+    background: #882929;
+}
+
+.foto-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.foto-form label {
+    color: #173B6C;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.foto-form input[type="file"] {
+    max-width: 220px;
+    font-size: 12px;
+}
+
+.foto-form button {
+    padding: 7px 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #173B6C;
+    color: white;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.foto-form button:hover {
+    background: #214d88;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .perfil-page {
+        padding: 25px;
+    }
+
+    .campo-grupo {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-actual {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}

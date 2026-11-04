@@ -1,3 +1,7 @@
+/*==========================
+        ESTILOS GLOBALES
+==========================*/
+
 *{
     margin:0;
     padding:0;
@@ -6,6 +10,14 @@
 }
 
 body{
+    background:#F8FAFC;
+}
+
+/*==========================
+        LOGIN / REGISTRO
+==========================*/
+
+.auth-page{
 
     background:linear-gradient(135deg,#dbeafe,#ede9fe);
 
@@ -26,6 +38,18 @@ body{
     display:flex;
 
     justify-content:center;
+
+}
+
+.logo{
+
+    width:380px;
+
+    display:block;
+
+    margin:auto;
+
+    margin-bottom:-45px;
 
 }
 
@@ -71,11 +95,23 @@ input{
 
     border-radius:10px;
 
-    border:1px solid #d1d5db;
+    border:1px solid #D1D5DB;
+
+    font-size:16px;
 
     transition:.3s;
 
-    font-size:16px;
+}
+
+input:focus{
+
+    outline:none;
+
+    border:2px solid #A78BFA;
+
+    box-shadow:0 0 15px rgba(167,139,250,.30);
+
+    transform:scale(1.02);
 
 }
 
@@ -89,13 +125,15 @@ button{
 
     border-radius:10px;
 
-    background:linear-gradient( 135deg,#4FD1C5,#A78BFA);
+    background:linear-gradient(135deg,#4FD1C5,#A78BFA);
 
     color:white;
 
     font-size:16px;
 
     cursor:pointer;
+
+    transition:.3s;
 
     box-shadow:0 10px 25px rgba(79,209,197,.25);
 
@@ -104,31 +142,5 @@ button{
 button:hover{
 
     transform:translateY(-2px);
-
-    transition:.3s;
-
-}
-
-.logo{
-
-    width:380px;
-
-    display:block;
-
-    margin:auto;
-
-    margin-bottom:-45px;
-
-}
-
-input:focus{
-
-outline:none;
-
-border:2px solid #A78BFA;
-
-box-shadow:0 0 15px rgba(167,139,250,.30);
-
-transform:scale(1.02);
 
 }

@@ -6,4 +6,4 @@ require_once "app/core/Router.php";
 
 $router = new Router();
 
-$router->cargar();
+$router->cargar(); 

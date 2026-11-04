@@ -1,31 +1,27 @@
+
 <div class="card-actividad">
 
     <h2>📊 Tu actividad</h2>
 
-    <p>
+    <p>Conversaciones</p>
 
-        Conversaciones
-
-    </p>
-
-    <h1>
-
-        0
-
-    </h1>
+    <h1><?= (int) $totalConversaciones ?></h1>
 
     <hr>
 
-    <p>
-
-        Emoción más registrada
-
-    </p>
+    <p>Emoción más registrada</p>
 
     <strong>
-
-        Sin registros
-
+        <?php if (!empty($emocionFrecuente)): ?>
+            <?= htmlspecialchars(
+                $emocionFrecuente["nombre"],
+                ENT_QUOTES,
+                'UTF-8'
+            ) ?>
+            (<?= (int) $emocionFrecuente["cantidad"] ?>)
+        <?php else: ?>
+            Sin registros
+        <?php endif; ?>
     </strong>
 
 </div>

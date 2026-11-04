@@ -1,0 +1,160 @@
+.sidebar {
+    width: 300px;
+    min-height: 100vh;
+    background: #173B6C;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+
+/* LOGO */
+
+.sidebar .logo-menu {
+    display: block !important;
+    width: 240px !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 10px auto 55px !important;
+    object-fit: contain;
+}
+
+
+/* OPCIONES PRINCIPALES */
+
+.sidebar>a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 18px 20px;
+    margin-bottom: 12px;
+
+    border-radius: 16px;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    transition: 0.25s;
+}
+
+.sidebar>a:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.sidebar>a.activo {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================================
+   SUBMENÚ DEL CHAT
+   ========================================= */
+
+.chat-submenu {
+    margin: -4px 0 16px 14px;
+    padding-left: 12px;
+
+    border-left: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+
+/* NUEVA CONVERSACIÓN */
+
+.chat-submenu .nueva-conversacion {
+    display: block !important;
+
+    width: auto !important;
+
+    margin: 0 0 10px 0 !important;
+    padding: 6px 8px !important;
+
+    color: rgba(255, 255, 255, 0.82) !important;
+    background: transparent !important;
+
+    font-size: 14px !important;
+    font-weight: 500 !important;
+
+    white-space: nowrap !important;
+
+    text-decoration: none !important;
+}
+
+.chat-submenu .nueva-conversacion:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-radius: 8px;
+}
+
+
+/* TÍTULO */
+
+.chat-submenu .titulo-historial {
+    display: block !important;
+
+    margin: 2px 0 4px 8px !important;
+
+    color: rgba(255, 255, 255, 0.42) !important;
+
+    font-size: 9px !important;
+    font-weight: 600 !important;
+
+    letter-spacing: 1.4px;
+}
+
+
+/* LISTA */
+
+.chat-submenu .historial-chats {
+    display: flex !important;
+
+    flex-direction: column;
+
+    gap: 1px;
+}
+
+
+/* CONVERSACIONES */
+
+.chat-submenu .chat-historial {
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 6px 8px !important;
+
+    border-radius: 8px !important;
+
+    color: rgba(255, 255, 255, 0.68) !important;
+    background: transparent !important;
+
+    font-size: 13px !important;
+    font-weight: 400 !important;
+
+    text-decoration: none !important;
+
+    white-space: nowrap !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    transition: 0.2s;
+}
+
+.chat-submenu .chat-historial:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: white !important;
+}
+
+
+/* CHAT ACTUAL */
+
+.chat-submenu .chat-historial.chat-activo {
+    background: rgba(255, 255, 255, 0.13) !important;
+    color: white !important;
+    font-weight: 500 !important;
+}
+

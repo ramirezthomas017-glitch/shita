@@ -10,6 +10,8 @@
 
         <p>Bienvenido de nuevo 💜</p>
 
+        <body class="auth-page">
+
         <form
             action="<?= URL ?>?url=iniciarSesion"
             method="POST">

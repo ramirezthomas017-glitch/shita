@@ -1,0 +1,124 @@
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.historial-page {
+    flex: 1;
+    min-height: 100vh;
+    padding: 50px;
+    background: #f7f9fc;
+}
+
+.historial-header {
+    margin-bottom: 30px;
+}
+
+.historial-header h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #173B6C;
+}
+
+.historial-header p {
+    margin-top: 8px;
+    color: #777;
+}
+
+.historial-lista {
+    max-width: 900px;
+}
+
+.historial-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 24px;
+    margin-bottom: 12px;
+
+    background: white;
+    border-radius: 16px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+    transition: 0.2s;
+}
+
+.historial-item:hover {
+    transform: translateY(-2px);
+}
+
+.historial-titulo {
+    color: #173B6C;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.historial-fecha {
+    margin-top: 6px;
+    color: #999;
+    font-size: 13px;
+}
+
+.historial-acciones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.historial-abrir {
+    padding: 8px 16px;
+
+    border-radius: 9px;
+
+    background: #173B6C;
+    color: white;
+
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.historial-eliminar {
+    padding: 8px;
+
+    color: #888;
+    text-decoration: none;
+
+    border-radius: 8px;
+}
+
+.historial-eliminar:hover {
+    background: #f1f1f1;
+}
+
+.historial-vacio {
+    padding: 50px;
+
+    background: white;
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+.historial-vacio h2 {
+    color: #173B6C;
+}
+
+.historial-vacio p {
+    color: #777;
+}
+
+.historial-vacio a {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 11px 18px;
+
+    border-radius: 10px;
+
+    background: #173B6C;
+    color: white;
+
+    text-decoration: none;
+}
